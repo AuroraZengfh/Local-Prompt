@@ -1,4 +1,4 @@
-# Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection 
+# Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection (ICLR 2025)
 
 This repo is the official implementation of ICLR 2025 paper: **[Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection](https://arxiv.org/abs/2409.04796)**
 
