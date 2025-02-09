@@ -1,15 +1,32 @@
-# Local-Prompt
+# Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection (ICLR2025)
 
-This is the official implementation of **Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection (ICLR2025)**
+This repo is the official implementation of our paper: **[Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection (ICLR2025)](https://arxiv.org/abs/2409.04796)**
 
-:open_book: [Paper](https://arxiv.org/abs/2409.04796)
 
-## Data Preparation
+> Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection
+>
+> Fanhu Zeng, Zhen Cheng, Fei Zhu, Hongxin Wei, Xu-Yao Zhang
 
-## Citation
+[![arXiv](https://img.shields.io/badge/Arxiv-2409.04796-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.04796)
+[![ICLR](https://img.shields.io/badge/OpenReview-Paper-orange.svg)](https://openreview.net/pdf?id=Ew3VifXaxZ)
+
+
+## :open_book: Overview
+
+## :eight_pointed_black_star: Main Results
+
+## :rocket: Quick Start
+
+### Data Preparation
+
+### Train
+
+### Inference
+
+## :blue_book: Citation
 If you find this work useful, consider giving this repository a star :star: and citing :bookmark_tabs: our paper as follows:
 
-```
+```bibtex
 @inproceedings{zeng2025enhancing,
   title={Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection},
   author={Fanhu Zeng and Zhen Cheng and Fei Zhu and Hongxin Wei and Xu-Yao Zhang},
