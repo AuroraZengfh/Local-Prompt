@@ -20,7 +20,7 @@ This repo is the official implementation of ICLR 2025 paper: **[Local-Prompt: Ex
 
 ## :sparkles: Motivation
 
-### **What is the primary problem for out-of-distribution detection?**
+### **What is the challenging problem for out-of-distribution detection?**
 
 ![overall](figures/overall.png)
 
