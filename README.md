@@ -37,7 +37,7 @@ We introduce **Local-Prompt**, a novel coarse-to-fine tuning paradigm to emphasi
 Comprehensive experiments demonstrate the effectiveness and potential of our method. Notably, our method reduces average FPR95 by 5.17% against state-of-the-art method in 4-shot tuning on challenging ImageNet-1k dataset, even outperforming 16-shot results of previous method.
 
 ## :rocket: Quick Start
-### Environment and package 
+### Environment and Package 
 ```bash
 # Create a conda environment
 conda create -n localprompt python=3.8
@@ -45,11 +45,11 @@ conda create -n localprompt python=3.8
 # Activate the environment
 conda activate localprompt
 
-# clone this repo
+# Clone this repo
 git clone https://github.com/AuroraZengfh/Local-Prompt.git
 cd Local-Prompt
 
-# install necessary packages
+# Install necessary packages
 pip install -r requirements.txt
 ```
 
@@ -107,7 +107,7 @@ Local-Prompt
     ...
 ```
 
-### Train
+### Training
 The training script is in `Local-Prompt/scripts/train.sh`, you can alter the parameters in the script file.
 
 e.g., 4-shot training with ViT-B/16
@@ -116,7 +116,7 @@ CUDA_VISIBLE_DEVICES=0 sh scripts/train.sh data imagenet vit_b16_ep30 end 16 4 T
 ```
 
 ### Inference
-The eval script is in Local-Prompt/scripts/train.sh, you can alter the parameters in the script file.
+The evaluation script is in Local-Prompt/scripts/train.sh, you can alter the parameters in the script file.
 
 e.g., evaluate 4-shot model of seed1 obtained from training scripts above
 
@@ -145,4 +145,4 @@ If you find them helpful, please consider citing them as well.
 
 ## Contact
 
-If you have any questions, feel free to contact [zengfanhu2022@ia.ac.cn](zengfanhu2022@ia.ac.cn)
+If you have any questions, feel free to contact [zengfanhu2022@ia.ac.cn](zengfanhu2022@ia.ac.cn).
