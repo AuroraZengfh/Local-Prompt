@@ -9,7 +9,14 @@ This repo is the official implementation of ICLR 2025 paper: **[Local-Prompt: Ex
 [![arXiv](https://img.shields.io/badge/Arxiv-2409.04796-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.04796)
 [![ICLR](https://img.shields.io/badge/OpenReview-Paper-orange.svg)](https://openreview.net/pdf?id=Ew3VifXaxZ)
 
-**Key words**: Vision-language model, Out-of-distribution detection, Open-environment recognition, Few-shot learning, Prompt learning.
+**Key words: Vision-language model, Out-of-distribution detection, Open-environment recognition, Few-shot learning, Prompt learning.**
+
+## :newspaper: News
+
+- **[2025.02.20]** We release [training](scripts/train.sh) and [evaluation](scripts/eval.sh) script for LocalPrompt. Try it now! :fire:
+- **[2025.02.15]** We release camera-ready submission on [openreview](https://openreview.net/forum?id=Ew3VifXaxZ&noteId=I6rrHj9ExE). :cake:
+- **[2025.01.23]** **Local-Prompt** has been accepted by **ICLR 2025**! :tada:
+- **[2024.09.07]** [Local-Prompt](https://arxiv.org/html/2409.04796v2) is available on Arxiv. :candy:
 
 ## :sparkles: Motivation
 
@@ -18,7 +25,6 @@ This repo is the official implementation of ICLR 2025 paper: **[Local-Prompt: Ex
 ![overall](figures/overall.png)
 
 The most challenging scene for OOD detection is that one hard OOD sample is **similar to a known class on the whole** and only **has subtle differences locally**, which naturally requires the detector to identify outliers through local outlier regions. However, existing research falls short of refining OOD task via rich local information when subtle OOD samples are exhibited in certain regions. Some methods merely focus on utilizing global features only (blue boxes), which ignores local features (red boxes) and inevitably brings about coarse description. Others use the same prompts to match both global and local image features, so the gap between them may lead to inaccurate local outlier identification. Consequently, it is straightforward that enhancing regional information to **empower the model with local outlier knowledge could be significant to OOD detection**.
-
 
 ## :open_book: Overview
 
@@ -136,3 +142,7 @@ If you find this work useful, consider giving this repository a star :star: and 
 The code is based on  [CoOp](https://github.com/KaiyangZhou/CoOp), [LoCoOp](https://github.com/AtsuMiyai/LoCoOp). Thanks for these great works and open sourcing! 
 
 If you find them helpful, please consider citing them as well. 
+
+## Contact
+
+If you have any questions, feel free to contact [zengfanhu2022@ia.ac.cn](zengfanhu2022@ia.ac.cn)
