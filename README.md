@@ -9,10 +9,26 @@ This repo is the official implementation of ICLR 2025 paper: **[Local-Prompt: Ex
 [![arXiv](https://img.shields.io/badge/Arxiv-2409.04796-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.04796)
 [![ICLR](https://img.shields.io/badge/OpenReview-Paper-orange.svg)](https://openreview.net/pdf?id=Ew3VifXaxZ)
 
+**Key words**: Vision-language model, Out-of-distribution detection, Open-environment recognition, Few-shot learning, Prompt learning.
+
+## :sparkles: Motivation
+
+### **What is the primarly problem for out-of-distribution detection?**
+
+![overall](figures/overall.png)
+
+The most challenging scene for OOD detection is that one hard OOD sample is **similar to a known class on the whole** and only **has subtle differences locally**, which naturally requires the detector to identify outliers through local outlier regions. However, existing research falls short of refining OOD task via rich local information when subtle OOD samples are exhibited in certain regions. Some methods merely focus on utilizing global features only (blue boxes), which ignores local features (red boxes) and inevitably brings about coarse description. Others use the same prompts to match both global and local image features, so the gap between them may lead to inaccurate local outlier identification. Consequently, it is straightforward that enhancing regional information to **empower the model with local outlier knowledge could be significant to OOD detection**.
+
 
 ## :open_book: Overview
 
-## :sparkles: Main Results
+### **What do we do to overcome current problem?**
+
+![structure](figures/structure.png)
+
+We introduce **Local-Prompt**, a novel coarse-to-fine tuning paradigm to emphasize regional enhancement with local prompts. Our method comprises two integral components: **global prompt guided negative augmentation** and **local prompt enhanced regional regularization**. The former utilizes frozen, coarse global prompts as guiding cues to incorporate negative augmentation, thereby leveraging local outlier knowledge. The latter employs trainable local prompts and a regional regularization to capture local information effectively, aiding in outlier identification. We also propose regional-related metric to empower the enrichment of OOD detection. 
+
+Comprehensive experiments demonstrate the effectiveness and potential of our method. Notably, our method reduces average FPR95 by 5.17% against state-of-the-art method in 4-shot tuning on challenging ImageNet-1k dataset, even outperforming 16-shot results of previous method.
 
 ## :rocket: Quick Start
 ### Environment and package 
