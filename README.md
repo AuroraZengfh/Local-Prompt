@@ -128,9 +128,9 @@ CUDA_VISIBLE_DEVICES=0 sh scripts/eval.sh data imagenet vit_b16_ep30 16 10 outpu
 If you find this work useful, consider giving this repository a star :star: and citing :bookmark_tabs: our paper as follows:
 
 ```bibtex
-@inproceedings{zeng2025enhancing,
+@inproceedings{zeng2025local,
   title={Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection},
-  author={Fanhu Zeng and Zhen Cheng and Fei Zhu and Hongxin Wei and Xu-Yao Zhang},
+  author={Zeng, Fanhu and Cheng, Zhen and Zhu, Fei and Wei, Hongxin and Zhang, Xu-Yao},
   booktitle={The Thirteenth International Conference on Learning Representations},
   year={2025},
   url={https://openreview.net/forum?id=Ew3VifXaxZ}
