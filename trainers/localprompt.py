@@ -289,7 +289,7 @@ class CustomCLIP(nn.Module):
             neg_logits_local = logit_scale * neg_local_image_features @ neg_text_features.t()
 
             # for diversity regularization
-            loss_div = torch.nn.functional.cosine_similarity(local_text_features[None,:,:], local_text_features[:,None,:], dim=-1)
+            loss_div = torch.nn.functional.cosine_similarity(neg_text_features[None,:,:], neg_text_features[:,None,:], dim=-1)
 
             loss_div = torch.sum(loss_div,dim=-1)/self.prompt_learner.num_neg_prompts
             loss_div = torch.sum(loss_div,dim=-1)/(self.prompt_learner.num_neg_prompts-1)
