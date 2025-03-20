@@ -19,7 +19,6 @@ from einops import repeat
 import os 
 os.environ['CUDA_LAUNCH_BLOCKING']='1'
 
-
 _tokenizer = _Tokenizer()
 softmax = nn.Softmax(dim=1).cuda()
 
@@ -60,7 +59,6 @@ class TextEncoder(nn.Module):
         x = x[torch.arange(x.shape[0]), tokenized_prompts.argmax(dim=-1)] @ self.text_projection
 
         return x
-
 
 class PromptLearner(nn.Module):
     def __init__(self, cfg, classnames, clip_model):
@@ -212,9 +210,7 @@ class PromptLearner(nn.Module):
             dim=1,
         )
 
-
         return self.global_embedding, local_prompts, neg_prompts
-
 
 class CustomCLIP(nn.Module):
     def __init__(self, cfg, classnames, clip_model):
@@ -323,8 +319,6 @@ class CustomCLIP(nn.Module):
             neg_logits_local = logit_scale * local_image_features @ neg_text_features.t()
             
             return logits, logits_local, neg_logits_local
-            
-
 
 @TRAINER_REGISTRY.register()
 class LOCALPROMPT(TrainerX):
