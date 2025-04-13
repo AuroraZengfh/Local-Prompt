@@ -16,7 +16,7 @@ This repo is the official implementation of ICLR 2025 paper: **[Local-Prompt: Ex
 - **[2025.02.20]** We release [training](scripts/train.sh) and [evaluation](scripts/eval.sh) script for LocalPrompt. Try it now! :fire:
 - **[2025.02.15]** We release camera-ready submission on [openreview](https://openreview.net/forum?id=Ew3VifXaxZ&noteId=I6rrHj9ExE). :cake:
 - **[2025.01.23]** **Local-Prompt** has been accepted by **ICLR 2025**! :tada:
-- **[2024.09.07]** [Local-Prompt](https://arxiv.org/html/2409.04796v2) is available on Arxiv. :candy:
+- **[2024.09.07]** [Local-Prompt](https://arxiv.org/abs/2409.04796) is available on Arxiv. :candy:
 
 ## :sparkles: Motivation
 
