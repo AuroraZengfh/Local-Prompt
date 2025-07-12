@@ -116,7 +116,7 @@ CUDA_VISIBLE_DEVICES=0 sh scripts/train.sh data imagenet vit_b16_ep30 end 16 4 T
 ```
 
 ### Inference
-The evaluation script is in Local-Prompt/scripts/train.sh, you can alter the parameters in the script file.
+The evaluation script is in Local-Prompt/scripts/eval.sh, you can alter the parameters in the script file.
 
 e.g., evaluate 4-shot model of seed1 obtained from training scripts above
 
